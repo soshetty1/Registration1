@@ -7,5 +7,5 @@ import com.example.Registration.model.User;
 public interface RegistrationRepository extends JpaRepository<User,Integer> {
 
 	public User findByEmailId(String emailid);
-
+	public User findUserByEmailIdAndPassword(String emailid, String password);
 }

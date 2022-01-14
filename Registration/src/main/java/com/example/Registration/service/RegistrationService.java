@@ -15,8 +15,9 @@ public class RegistrationService {
 	}
 	public User fetchUserByEmailId(String email) {
 		 return repo.findByEmailId(email);
-	
-		
 	}
+	public User fetchUserByEmailIdAndPassword(String email,String password) {
+		 return repo.findUserByEmailIdAndPassword(email, password);
 
+}
 }
